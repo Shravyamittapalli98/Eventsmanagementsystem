@@ -1,0 +1,30 @@
+body{
+    background-color: powderblue;
+    background-size: cover;
+}
+table{
+      width:550px; 
+      height:350px;     
+      top:50%;
+      left:90%;
+     }
+ h1{
+ 	left: 50%;
+ 	transform:translate(-50%,-50%);
+    position:absolute;
+
+ }
+table,td,th{
+
+    background-color:red;
+    border: 1px solid black;
+
+}
+#bg{
+   
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover
+
+}

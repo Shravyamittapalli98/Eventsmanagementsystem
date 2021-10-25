@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>show</title>
+	{% load static %}
+    {% csrf_token %}  
+	<link href="{% static 'catolog.css' %}" rel="stylesheet"> 
+
+	<style>
+	*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:Arial;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+		
+		body{
+    background-color: powderblue;
+    background-size: cover;
+}
+table,table-container{
+      width:550px; 
+      height:350px;     
+      top:50%;
+      left:20%;
+     }
+ h1{
+ 	top:30%;
+ 	left: 20%;
+ }
+table,td,th{
+
+    background-color:red;
+    border: 1px solid black;
+
+}
+#bg{
+   
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover
+
+}
+
+	</style>
+<body id="bg" style="background-image: url('{%static 'bac.jpg'%}')";>
+	{% csrf_token %}
+	<nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+
+
+
+    </ul>
+</nav>
+<div class="table-container">
+	<h1>Event Catolog</h1>
+	<table class="table table-striped table-bordered table-sm">
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>Event type</th>
+				<th>Budget</th>
+				<th>Capacity</th>
+				<th>facitities</th>
+				<th>action</th>
+				<th>action</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for e in ev %}
+			<tr>
+				<td>{{e.id}}</td>
+				<td>{{e.Event_name}}</td>
+				<td>{{e.Event_cost}}</td>
+				<td>{{e.Capacity}}</td>
+				<td>{{e.Facilities}}</td>
+				<td><a href="/update/{{e.id}}">update</a></td>
+				<td><a href="/delete/{{e.id}}">delete</a></td>
+				
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<button>
+	<h2><a href="/dashboard">BACK TO HOME</a></h2></button>
+
+</body>
+</head>
+</html>

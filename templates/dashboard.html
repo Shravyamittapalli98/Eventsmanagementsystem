@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	{% load static %}
+    {% csrf_token %}  
+
+<style>
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:cursive;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+    background-image: url("{% static 'bac1.jpeg' %}");
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover;
+
+    overflow: auto;
+
+}
+.gallery{
+    margin:5px;
+    border:1px solid #ccc;
+    float:right;
+    width:390px;
+}
+.gallery img{
+            width: 100%;
+            height: auto;
+
+
+}
+.desc, .name, .btn{
+    padding :5px;
+    text-align: center;
+    font-family: cursive;
+}
+.name{
+   font-weight: bolder;
+}
+
+</style>
+</head>
+<body>
+
+	
+<nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+            <li><a href="/customer/">Help</a></li>
+          
+          
+
+
+
+    </ul>
+</nav>
+<div class="container">
+                <div class="gallery">
+                     <img src="{%static 'wedd.jpeg' %}">
+                     <div class="name">WEDDING PLANNING</div>
+
+
+
+                       <div class="desc">We offer all kind of services for wedding based on your budget,taste,vision,requirements.we come with a personalised wedding proposal that suits your needs and preferences.</div>
+                       <div class="btn"><a href="wedding">Know more</a></div>
+                <div class="gallery">
+                     <img src="{%static 'birth.jpeg' %}">
+                     <div class="name">BIRTHDAY PARTIES</div>
+                      <div class="desc">Here all kind of services are available,we organize birthday parties for all age groups that are based on your tastes,budget,requirements and your preferences.</div>
+                      <div class="btn"><a href="birthday">Know more</a></div>
+                 <div class="gallery">
+                     <img src="{%static 'corp1.jpeg' %}">
+                     <div class="name">CORPORATE EVENTS</div>
+                      <div class="desc">In this we provide you a wide variety of seating plans which is benificial for you with comfortable prices and flawless ambience</div>
+                      <div class="btn"><a href="corporate">Know more</a></div>
+                <div class="gallery">
+                     <img src="{%static 'sup1.jpeg' %}">
+                     <div class="name">SUPRISE PLANNING</div>
+                      <div class="desc">At Dream Events , we help you to plan surprise  events that will be remembered forever. We offer an amazing range of party preparation gears – starting from location to design ideas to decorations with balloons and other accessories that are the perfect backdrop for any successful surprise birthday party of your choice.
+</div>
+                      <div class="btn"><a href="suprise">Know more</a></div>
+                
+                     
+            
+</div>
+    </div>
+
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
+	

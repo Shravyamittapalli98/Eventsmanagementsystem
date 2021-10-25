@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        {% load static %}
+    {% csrf_token %}  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <style>
+      *{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:Arial;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  .testimonials{
+    padding: 40px 0;
+    background:white;
+    color:#434343;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden
+    padding: 0 20px;
+  
+  }
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+  
+  .testimonial{
+    left:50%;
+    background:whitesmoke;
+    padding: 30px;
+  }
+  .testimonial img{
+    width:300px;
+    height: 50%;
+    
+    
+  }
+  h1{
+    font-family: cursive;
+    text-align: center;
+  }
+  p {
+    font-family: cursive;
+    font-size: large;
+    text-align: justify-all;
+    padding: 10px;
+  }
+    </style>
+    <body>
+
+      <nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+
+
+
+    </ul>
+</nav>
+
+    <div class="testimonials">
+      <div class="inner">
+        <h1>WEDDING PLANNING</h1>
+        <div class="border"></div>
+
+        <div class="row1">
+          <div class="col">
+            <div class="testimonial">
+              <P>
+
+Your wedding day must be just about you! We are committed to take care of every tiniest aesthetically-driven details and keep up our promise to plan your wedding ceremony the way you want it to happen. From Addu Thera to Garlands, Rangoli to Bridal Makeup, Pelli Pallaki to Gifts or anything else you need, our wedding event management team arranges every detail to quietly take away all your worries so that you can simply relax and enjoy your big day.
+We are honored to be different and ensure that your wedding will be unlike another. We take a handful of projects, one at a time to secure our complete dedication in making your wedding event as personal and unique as possible.
+</P>
+<P>
+Our collaborative process starts with establishing a true personal connection with our clients, discover their authentic moments, and use them as inspirations for our designs. Our motto behind gaining close connections is to allow our clients trust our planning and design capabilities, open up about their wildest dreams and expectation so that every discussion we have with them are meant to take a thoughtful step toward making the wedding “a dream come true”. 
+
+We offer our clients caskets filled with happiness.  Our event designs are reflections of their visions and our every possible effort to make them classic and timeless without missing the hints of modern twists.
+
+              </P>               
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'mrg1.jpeg' %}">
+              <div class="name">Haldhi and Mehendhi Event
+                <br> Cost= 5000/-</div>
+
+              <p>
+                OMG these Dream Event planners are really great in organizing such a fabulous events with low budget.I would like to book more and more events .
+                The ambience was awesome and I definitely liked that you have a very modern style.
+                Most importantly,every food and beverage on your menu tasted Great!!!
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'mrg2.jpeg' %}">
+                <div class="name">Grand Welcome
+                 <br> Cost= 10000/- </div>
+
+             
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'mrg3.jpeg' %}">
+                <div class="name">Sangeeth set up
+                 <br> Cost= 15000/-</div>
+
+             
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'mrg4.jpeg' %}">
+                <div class="name">Bride to be
+                 <br> Cost= 5000/-</div>
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div><div class="col">
+            <div class="testimonial">
+                <img src="{%static 'wedd.jpeg' %}">
+                <div class="name">Mandapam setup
+                 <br> Cost= 50000/-</div>
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           
+         
+              <h2><a href="/dashboard">BACK TO HOME</a><h2></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

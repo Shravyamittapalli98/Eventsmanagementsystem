@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  .testimonials{
+    padding: 40px 0;
+    background:darksalmon;
+    color:#434343;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden
+    padding: 0 20px;
+  
+  }
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+  
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+    font-family:cursive;
+  }
+  .testimonial img{
+    width:100px;
+    height: 50%;
+    border-radius: 50%;
+  }
+  h1{
+    text-align: center;
+  }
+  p{
+    font-family: cursive;
+  }

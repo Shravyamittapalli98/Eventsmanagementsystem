@@ -1,0 +1,83 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    {% load static %}
+    {% csrf_token %}  
+    <link href="{% static 'style.css' %}" rel="stylesheet"> 
+
+    <meta charset="UTF-8">  
+    <title>delete</title>  
+    <style>
+      body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:cursive;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+#bg{
+   
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover
+
+}
+    </style>
+ 
+    <title>upda</title>  
+</head>
+
+
+<body id="bg" style="background-image: url('{%static 'bac1.jpeg' %}')";>  
+    <nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/events1/"> Add EventCatolog</a></li>
+            <li><a href="/user_bookings/">Events Booked</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/cust_reviews/">Reviews</a></li>
+
+    </ul>
+</nav>
+    <form method="POST">  
+
+        {% csrf_token %}  
+          DO YOU WANT TO DELETE THIS
+        <input type="submit" value="Yes"> 
+        <a href="home.html">cancel</a> 
+    </form> 
+</body>  
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        {% load static %}
+    {% csrf_token %}  
+    <link href="{% static 'reviews.css' %}" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <style>
+      *{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+r     background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:Arial;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+p{
+  font-family: cursive;
+  font-size: large;
+    
+    </style>
+    <body>
+
+     
+     <nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/events1/"> Add EventCatolog</a></li>
+            <li><a href="/user_bookings/">Events Booked</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/cust_reviews/">Reviews</a></li>
+
+
+
+    </ul>
+</nav>  
+
+    <div class="testimonials">
+      <div class="inner">
+        <h1>Testimonials</h1>
+        <div class="border"></div>
+
+        <div class="row1">
+          <div class="col">
+            <div class="testimonial">
+              
+              <div class="name">Touseeq Ijaz</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                OMG these Dream Event planners are really great in organizing such a fabulous events with low budget.I would like to book more and more events .
+                The ambience was awesome and I definitely liked that you have a very modern style.
+                Most importantly,every food and beverage on your menu tasted Great!!!
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              
+              <div class="name">Oliva</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              
+              <div class="name">Ronnel Gaikwad</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                
+                These event organizers take all precautions about this ongoing pandemic.i appreciate the event organizers!!! 
+              </p>
+            </div>
+          </div>
+        <div class="row2">
+            <div class="col">
+            <div class="testimonial">
+         
+              <div class="name">Stephen</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                The team is doing a great job in bridging the gap between vendors and client. Overall its been a smooth and quite beneficial experience on this platform. 
+                The right set of information is provided and the team is cooperative as well. Good job!
+              </p>
+            </div>
+          </div>
+              <div class="col">
+            <div class="testimonial">
+              
+              <div class="name">Alina</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                Very excellent app for wedding and birthdays, best of all apps it saves lot of time and work style is excellent.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+             
+              <div class="name">Jammes</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                somewhat unsatisfied with the service, need to improve your service, or else this app is flawsome
+              </p>
+               
+            </div>
+          </div>
+          <div class="row3">
+          <div class="col">
+            <div class="testimonial">
+             
+              <div class="name">Mayaa</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                one of the best websites I've seen to give local events in whatever town u live in.thank you for putting all this information in one place!
+              </p>
+            </div>
+          </div>
+              <h2><a href="/home">BACK TO HOME</a><h2></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

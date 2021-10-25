@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	{% load static %}
+    {% csrf_token %}  
+	<title></title>
+	<style>
+		
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:cursive;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+ }
+		.container{
+
+			margin-top: 50px;
+			margin-bottom: 50px;
+			margin-left: 50px;
+			margin-right: 700px;
+			float: right;
+			font-family: cursive;
+			text-align: justify;
+		}
+
+		.section_title{} .section_subtitle{
+			margin-bottom: 7px;
+			
+			padding-left: 7px;
+			font-size: 16px;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #aaaaaa;
+			border-left: 3px solid #bfa;
+			font-size: 900;s
+			font-weight: 300;
+			font-family: cursive;
+		}
+		.section_main_title{
+			margin-top: 0;
+			margin-bottom:37px;
+			font-size: 30px;
+			line-height: 1.27;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+		.section_main_title strong{
+			font-weight: 600;
+		}
+	
+    #bg{
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover;
+
+    overflow: auto;
+
+}
+
+	</style>
+
+</head>
+<body id="bg" style="background-image: url('{%static 'abt.jpeg'%}')";>
+
+	<nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+             <li><a href="/customer/">Help</a></li>
+          
+
+
+
+    </ul>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="section_title"><br>
+				<div class="section_subtitle">About Us</div>
+				<h2 class="section_main_title">WE ARE<strong> CREATIVE</strong></h2>
+
+			<div class="about-item">
+				<p>
+					'Dream' Events is the Best Event Management company in India. We offer professional Planning and Event Management services for Corporate Events,Wedding Events, Conference Events, Product Launch Events, Fashion and Entertainment Events. You can be very confident in the creative design and expertise of our event planners to carefully plan your events and turning into a grand Successful Event.
+
+					Our experienced corporate event management team will start by really getting to understand you, your goals and why you are holding your event. Our mission is to then work towards your objectives and exceed your expectations. Our extensive database of venues and suppliers built over the years allows us to offer more choice and flexibility when planning your event, so your party, conference or other occasion becomes a spectacular production to amaze and inspire your guests.
+
+				</p>
+				<p>
+					High quality services provided by 'Dream' Event Organisers are indispensable for outstanding events. We guarantee full on-site management of organised events, starting with preparation, through event organisation, till the final accounting. Always having on mind the top quality possible, we work with best suppliers whose goal is accompanying our clients in the realisation of their objectives. What also makes us different is listening to our clients, because we do want to fully respond their needs. The client’s success is our great satisfaction.
+
+					With you and for you we can plan and organise a perfect itinerary for your guests in any location in our country. 'Dream' Event Organisers is your opportunity to experience something new and to make your next incentive a great success
+				</p>
+				
+				</div>
+			</div>
+		</div>
+		
+
+
+
+</div>	
+</body>
+</html>

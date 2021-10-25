@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	{% load static %}
+    {% csrf_token %} 
+	<title>confirmevent</title>
+	<style>
+	nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:cursive;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+
+	.container{
+
+			margin-top: 300px;
+			margin-bottom: 50px;
+			margin-left: 50px;
+			margin-right: 700px;
+			float: right;
+			font-family: cursive;
+			text-align: justify;
+		}
+
+		.section_title{} .section_subtitle{
+			margin-bottom: 7px;
+			
+			padding-left: 7px;
+			font-size: 50px;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #aaaaaa;
+			border-left: 3px solid #bfa;
+			font-weight:bolder;
+			font-family: cursive;
+		}
+		.section_main_title{
+			margin-top: 0;
+			margin-bottom:37px;
+			font-size: 40px;
+			line-height: 1.27;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+		.section_main_title p{
+			font-size: 30px;
+		}
+	
+    #bg{
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    background-size: cover;
+
+    overflow: auto;
+
+}
+
+	</style>
+
+</head>
+<body id="bg" style="background-image: url('{%static 'msg.jpeg'%}')";>
+
+<nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+          
+
+
+
+    </ul>
+</nav>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="section_title"><br>
+				<h1 class="section_main_title"> EVENT BOOKED SUCCESFULLY</h1>
+
+			<div class="about-item">
+				<p>
+					Thank you for choosing our Dream Events.
+				</p>
+				
+				</div>
+			</div>
+		</div>
+		
+
+
+
+</div>	
+</body>
+</html>
+			
+		

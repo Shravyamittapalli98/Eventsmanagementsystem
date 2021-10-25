@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        {% load static %}
+    {% csrf_token %}  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <style>
+      *{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:Arial;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  .testimonials{
+    padding: 40px 0;
+    background:white;
+    color:#434343;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden
+    padding: 0 20px;
+  
+  }
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  }
+  
+  .testimonial{
+    left:50%;
+    background:whitesmoke;
+    padding: 30px;
+  }
+  .testimonial img{
+    width:300px;
+    height: 50%;
+    
+    
+  }
+  h1{
+    font-family: cursive;
+    text-align: center;
+  }
+  p {
+    font-family: cursive;
+    font-size: large;
+    text-align: justify;
+    padding: 10px;
+  }
+    </style>
+    <body>
+
+      <nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+
+
+
+    </ul>
+</nav>
+
+    <div class="testimonials">
+      <div class="inner">
+        <h1>BIRTHDAY PARTIES</h1>
+        <div class="border"></div>
+
+        <div class="row1">
+          <div class="col">
+            <div class="testimonial">
+
+              <p>    
+We are one of the trusted event organizers for birthday party in Hyderabad. Our team of expert stylists ensures every small detail of your events is taken care of. From deciding the venue to transforming it into fabulous space and the perfect party setting, we use bespoke designs and finest of materials to turn the  DREAM events into reality.
+We add the touch of individuality to every event we design and create memorable parties with unique decorations depending on your overall budget and specific requirements.
+</p>
+<p>
+We even take care of the catering. Just let us know the numbers of guests, your budget, and how exactly you want your surprise party to look like and leave the rest up to us. All of our event designs comprise excellent venues, wonderful decoration, and lip-smacking food and drinks. We organize all this for you without any hassle.
+We offer brilliant birthday bash packages to make the celebration grand without hurting your pockets.
+Best
+
+              </p>
+               
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'birth2.jpeg' %}">
+              <div class="name">Safari Jungle 
+                <br> Cost=20000/-</div>
+
+              <p>
+                OMG these Dream Event planners are really great in organizing such a fabulous events with low budget.I would like to book more and more events .
+                The ambience was awesome and I definitely liked that you have a very modern style.
+                Most importantly,every food and beverage on your menu tasted Great!!!
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'birth5.jpeg' %}">
+                <div class="name">Circus Theme
+                <br> Cost=18000/-</div>
+             
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'birth3.jpeg' %}">
+                <div class="name">Minion Theme
+                <br> Cost=30000/-</div>
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           <div class="col">
+            <div class="testimonial">
+                <img src="{%static 'birth4.jpeg' %}">
+                <div class="name">Sesame Street 
+                <br> Cost=25000/-</div>
+
+              <p>
+                Amazing app filled with so many event ideas and suggestions, its great to connect with this event. Definetly recommended downloading and connecting with experts to plan out your wedding. 
+                
+              </p>
+               
+            </div>
+          </div>
+           
+         
+              <h2><a href="/dashboard">BACK TO HOME</a><h2></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

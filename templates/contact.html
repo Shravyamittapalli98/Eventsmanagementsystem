@@ -1,0 +1,118 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	{% load static %}
+        {% csrf_token %}  
+ <link href="{% static 'reviews.css' %}" rel="stylesheet"> 
+ <style>
+ 	*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    margin:0;
+    background:gray;
+}   
+nav{
+    background:#594848;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    float:left;
+}
+li h2{
+    top: 30%;
+    font-family: sans-serif;
+    color: seagreen;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background:#594848;
+    font-size:17px;
+    color:white;
+    padding:30px 10px;
+    font-family:cursive;
+}
+nav a:hover{
+     background: skyblue;
+     color: black;
+}
+ </style>
+		
+<body id="bg" style="background-image: url('{%static 'bac1.jpeg'%}')";>
+	{% csrf_token %}>
+	<nav>
+    <ul>
+
+            <li><h2>Dream Events</h2></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/show/">EventsCatolog</a></li>
+            <li><a href="/bookings">Book Event</a></li>
+            <li><a href="/">logout</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/contact/">contact us</a></li>
+            <li><a href="/customer/">Help</a></li>
+ 
+
+
+    </ul>
+</nav>
+
+
+
+<div class="testimonials">
+      <div class="inner">
+        <h1>Connect with us </h1>
+        <div class="border"></div>
+
+        <div class="row1">
+          <div class="col">
+            <div class="testimonial">
+		<p>--FOLLOW US ON WHATSUP MESSENGER--</lp>
+		<p>https://chat.whatsapp.com/09876543201876454l321</p>
+		<a href=""> JOIN NOW</a></p>
+	</div>
+</div>
+	 <div class="col">
+            <div class="testimonial">
+
+
+		<p>--FOLLOW US ON FACEBOOK--</p>
+		<p>https://www.facebook.com/DreamEvents/?ti=as</p>
+		<a href="">FOLLOW NOW</a><br></p>
+</div>
+</div>
+ <div class="col">
+      <div class="testimonial">
+      	<p>--FOLLOW US ON INSTAGRAM--</p>
+		  <p>https://www.instagram.com/DreamEvents/?utm_medium=copy_link</p>
+			 <a href="">FOLLOW NOW</a></p>
+			</div>
+		</div>
+	   <div class="col">
+      <div class="testimonial">
+
+		<p>--CONTACT NUMBER--</p>
+		<p> Call us through helpline number</p><br>
+			   <button><a href="">1234567890</a></button></p><br><br>
+			</div>
+		</div>
+
+</div>
+
+
+ 
+</body>
+</html>
